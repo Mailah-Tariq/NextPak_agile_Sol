@@ -1,0 +1,679 @@
+/* Error prompt overlay styling */
+.error-prompt-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.925);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.error-prompt-box {
+  background-color: #ffdddd;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.error-prompt-box p {
+  margin: 0 0 10px;
+  color: #b33a3a;
+  font-size: 16px;
+}
+
+.error-prompt-box button {
+  padding: 5px 15px;
+  background-color: #b33a3a;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contacts-screen {
+  padding: 20px;
+  background-color: #1c1c1e;
+  color: #fff;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.contacts-screen h3 {
+  text-align: center;
+  color: #a9a9a9;
+  margin-bottom: 20px;
+}
+
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 1px solid #333;
+  color: #fff;
+}
+
+.contact-name {
+  font-weight: bold;
+}
+
+.contact-number {
+  color: #a9a9a9;
+}
+
+/* //////////////////////////////////////////// */
+
+.dialed-number {
+  font-size: 24px;
+  color: #fff;
+
+  margin-top: 80px;
+}
+
+.add-number-button {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.add-number-button:hover {
+  background-color: #555;
+}
+
+.prompt-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prompt-box {
+  background: #333;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  color: #fff;
+  width: 300px;
+}
+
+.prompt-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #555;
+  background-color: #222;
+  color: #fff;
+}
+
+.prompt-box button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.prompt-box button:first-child {
+  background-color: #28a745; /* Save button color */
+  color: #fff;
+}
+
+.prompt-box button:last-child {
+  background-color: #ff4d4d; /* Cancel button color */
+  color: #fff;
+}
+
+
+/* 
+  ####################################
+  CallLogScreen */
+  .call-log-screen {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #000; /* Background color to match the dialer screen */
+    color: #fff;
+    padding-bottom: 60px; /* To prevent overlap with the footer */
+    box-sizing: border-box;
+}
+
+.call-log-screen h4 {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #333;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.call-log-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #333;
+    color: #fff;
+}
+
+/* Left-align the phone number */
+.call-log-item span:first-child {
+    flex: 1; /* Allows the number to take up remaining space on the left */
+    color: #fff;
+}
+
+/* Time and delete button on the right */
+.call-log-item .time-and-delete {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between time and delete button */
+}
+
+/* Styling for the delete button */
+.call-log-item button {
+    background: none;
+    border: none;
+    color: #ff4d4d; /* Red color for delete button */
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.call-log-item button:hover {
+    color: #ff6666;
+}
+
+/* 
+  ################################DialButton */
+
+  .dial-button {
+    background-color: #444;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .dial-button .letters {
+    font-size: 10px;
+    color: #aaa;
+    margin-top: 4px;
+  }
+  .dialed-number-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #1c1c1e; /* Dark background similar to iOS */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.call-header {
+    margin-top: 40px;
+    margin-bottom: 60px; /* Space below header to separate from buttons */
+    text-align: center;
+}
+
+.call-header span {
+    font-size: 16px;
+    color: #a9a9a9;
+}
+
+.call-header h2 {
+    font-size: 28px;
+    margin-top: 5px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* Container for all action buttons in two rows of three */
+.action-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three buttons per row */
+    gap: 20px; /* Equal space between all buttons */
+    width: 80%; /* Adjust width to control button alignment */
+    margin-bottom: 20px;
+}
+
+/* Style for each button */
+.call-action-button, .end-call-button {
+    background-color: #3a3a3c;
+    color: #fff;
+    border: none;
+    border-radius: 50%; /* Circular buttons */
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70px; /* Fixed height for uniformity */
+    width: 70px; /* Fixed width for circular shape */
+    font-size: 14px;
+    transition: background-color 0.3s; /* Smooth hover transition */
+}
+
+.call-action-button span, .end-call-button span {
+    font-size: 12px;
+    margin-top: 5px; /* Space between icon and label */
+    color: #ffffff;
+}
+
+/* Specific styling for the End Call button */
+.end-call-button {
+    background-color: #ff3b30; /* Red color for the end call button */
+    color: #ffffff;
+}
+
+
+.call-header {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.call-header span {
+    font-size: 16px;
+    color: #a9a9a9;
+}
+
+.call-header h2 {
+    font-size: 28px;
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+/* Container for all action buttons in two rows of three */
+.action-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three buttons per row */
+    gap: 20px; /* Equal space between all buttons */
+    width: 80%; /* Adjust width to control button alignment */
+    margin-bottom: 20px;
+}
+
+/* Style for each button */
+.call-action-button, .end-call-button {
+    background-color: #3a3a3c;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Space between icon and text */
+    height: 60px; /* Fixed height for uniformity */
+    font-size: 16px;
+}
+
+.end-call-button {
+    background-color: #ff3b30; /* Red color for the end call button */
+}
+/* ///////////////////////////////////Dialer Screen  */
+.dialer-screen {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Ensures items are spaced between */
+    height: 100vh;
+    padding: 20px; /* Optional padding for aesthetics */
+}
+/* src/components/DialedNumberScreen.css */
+
+.dialed-number-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.call-header {
+  margin-bottom: 40px;
+}
+
+.call-header span {
+  font-size: 16px;
+  color: #a9a9a9;
+}
+
+.call-header h2 {
+  font-size: 28px;
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+/* Action buttons grid layout */
+.action-buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three buttons per row */
+  gap: 15px; /* Space between buttons */
+  width: 100%;
+  max-width: 400px; /* Optional: set a max width */
+  margin: 0 auto;
+}
+
+/* Styling for each action button */
+.call-action-button, .end-call-button {
+  background-color: #3a3a3c;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 14px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 80px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Styling for the end call button */
+.end-call-button {
+  background-color: #ff3b30; /* Red for end call */
+}
+
+.call-action-button:hover, .end-call-button:hover {
+  background-color: #525254; /* Darker shade on hover */
+}
+
+/* Text label under each icon */
+.call-action-button span, .end-call-button span {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+
+/* Common styles for each action button */
+.call-action-button, .end-call-button {
+  background-color: #3a3a3c; /* Dark gray button color */
+  color: #ffffff;
+  border: none;
+  border-radius: 50%; /* Circular buttons */
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80px; /* Slightly larger height */
+  width: 80px; /* Slightly larger width */
+  transition: background-color 0.3s;
+}
+
+/* Label below each icon */
+.call-action-button span, .end-call-button span {
+  font-size: 13px;
+  margin-top: 5px; /* Space between icon and label */
+  color: #ffffff;
+}
+
+/* Style specifically for the End Call button */
+.end-call-button {
+  background-color: #ff3b30; /* Red color for end call button */
+  color: #ffffff;
+  height: 90px; /* Slightly larger for emphasis */
+  width: 90px;
+}
+
+/* End call button hover effect */
+.end-call-button:hover {
+  background-color: #e63946; /* Darker red on hover */
+}
+
+/* Adjust hover effect for call action buttons */
+.call-action-button:hover {
+  background-color: #525254;
+}
+
+.dial-pad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /* Space between buttons */
+    
+}
+
+.call-button {
+    background-color: #28a745; /* Green color for call button */
+    color: white;
+    font-size: 24px; 
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    transition: background-color 0.3s; 
+}
+
+.call-button:hover {
+    background-color: darkgreen; 
+}
+
+.delete-button {
+    background-color: red; /* Red color for delete button */
+    color: white; 
+    font-size: 24px; 
+    height: 60px;
+    width: 60px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    width: 100%;
+    padding: 0 20px; /* Side padding */
+    margin-bottom: 80px; /* Space above the footer */
+    position: relative; /* Ensure it stays in the flow */
+}
+.footer-menu {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+  /* ##################footerMenu */
+
+  .footer-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid #333;
+    font-size: 14px;
+  }
+  
+  .footer-menu a {
+    text-decoration: none;
+    color: #888;
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .dial-button, .call-action-button, .end-call-button {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+  }
+  .call-button, .delete-button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .dialed-number {
+    font-size: 16px;
+    margin-top: 200px;
+  }
+  .contact-name, .contact-number {
+    font-size: 16px;
+    margin-top: 0px;
+  }
+
+  .prompt-box, .error-prompt-box {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .dial-pad {
+    gap: 5px;
+  }
+
+  .footer-menu {
+    padding: 5px 0;
+    font-size: 12px;
+  }
+
+  .dial-button, .call-action-button, .end-call-button {
+    width: 45px;
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .call-button, .delete-button {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  .prompt-box h3, .error-prompt-box p {
+    font-size: 16px;
+  }
+  
+  .prompt-box button, .error-prompt-box button {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+}
+/* /////////////////////Favourites */
+.contact-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #333;
+  font-size: 16px; /* Base font size for desktop */
+}
+
+.favorite-button {
+  background: none;
+  border: none;
+  color: #ffdd00; /* Yellow for favorite */
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.favorite-button:hover {
+  color: #ffd700; /* Lighter yellow on hover */
+}
+
+.favorites-screen {
+  padding: 20px;
+  background-color: #1c1c1e;
+  color: #fff;
+  min-height: 100vh;
+}
+.favorite-icon {
+  color: #FFD700; /* Yellow color */
+  cursor: pointer;
+}
+
+
+.favorite-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #333;
+  font-size: 16px; /* Base font size for desktop */
+}
+
+/* Responsive adjustments */
+
+/* Tablets - adjust padding and font sizes for medium-sized screens */
+@media (max-width: 768px) {
+  .contact-item, .favorite-item {
+      padding: 8px 16px; /* Reduced padding for tablets */
+      font-size: 15px; /* Slightly smaller font */
+  }
+
+  .favorite-button {
+      font-size: 16px; /* Smaller button icon for tablets */
+  }
+}
+
+/* Mobile - single column layout and larger click areas for small screens */
+@media (max-width: 480px) {
+  .contact-item, .favorite-item {
+      flex-direction: column; /* Stack elements vertically */
+      align-items: flex-start; /* Align items to the left */
+      padding: 10px 15px;
+      font-size: 14px; /* Smaller font size for mobiles */
+  }
+
+  .contact-name, .contact-number {
+      display: block;
+      margin-bottom: 5px;
+  }
+
+  .favorite-button {
+      font-size: 20px; /* Larger button for easier clicking */
+      align-self: flex-end;
+      margin-top: 5px;
+  }
+
+  .favorites-screen, .contacts-screen {
+      padding: 15px;
+  }
+}
